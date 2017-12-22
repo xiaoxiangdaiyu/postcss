@@ -1,0 +1,25 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "postcss demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnext": "^1.0.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylelint": "^5.0.0",
+    "postcss": "^6.0.14"
+  },
+  "dependencies": {
+    "gulp-less": "^3.3.2"
+  }
+}

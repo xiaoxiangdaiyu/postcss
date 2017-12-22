@@ -1,6 +1,6 @@
 ## postCss 实践
 
-## [文档]('./src/README.md')
+## [文档]('https://github.com/xiaoxiangdaiyu/postcss/tree/master/src')
 ## 本地查看   
 ### init
 ```js

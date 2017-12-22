@@ -70,7 +70,7 @@ a{
 2. 基于postCss的丰富插件系统。   
    上文那些功能，都是基于postcss的插件提供的功能。  
    
-postCSS不然脑袋会让你并不能直接用于处理样式，只有配合它的插件，才能完成相关的编译工作。
+postcss本身并不直接用于处理样式，只有配合它的插件，才能完成相关的编译工作。
  
 #### postcss不是预编译语言的替代品   
   
@@ -86,7 +86,8 @@ postCSS不然脑袋会让你并不能直接用于处理样式，只有配合它�
 
 对比一下less和postcss的实现： 
 
-1、 对于less而言，肯定是写一个方法
+1、 对于less而言，肯定是写一个方法  
+
 ```css
 .flex-block() {
     display: -ms-flexbox;
@@ -96,7 +97,8 @@ postCSS不然脑袋会让你并不能直接用于处理样式，只有配合它�
 .test{
     .flex-block()
 }
-```
+``` 
+
 2、使用postcss
 
 ```css
@@ -125,7 +127,8 @@ postCSS不然脑袋会让你并不能直接用于处理样式，只有配合它�
     .ccc()
 }
 ```
-这时候postcss还是只需要如下:
+这时候postcss还是只需要如下:  
+
 ```css
 .test{
     display: flex;
@@ -137,7 +140,7 @@ postCSS不然脑袋会让你并不能直接用于处理样式，只有配合它�
 
 ## postcss工作原理   
 
-postcss本身是一个node模块，可以将css文件解析为抽象语法树(AST)，将该树在多个插件方法传递，然后将AST转换为字符串返回，该字符串可以输出到目标文件中。传递过程互中的插件可以选择是否改变该语法树，上诉改变可以通过sourcemap来记录。如下面的流程所示(借用w3cplus的一张图)：
+postcss本身是一个node模块，可以将css文件解析为抽象语法树(AST)，将该树在多个插件方法传递，然后将AST转换为字符串返回，该字符串可以输出到目标文件中。传递过程中的插件可以选择是否改变该语法树，上诉改变可以通过sourcemap来记录。如下面的流程所示(借用w3cplus的一张图)：
 <img src='https://www.w3cplus.com/sites/default/files/blogs/2017/1707/figure-18.png'/>
 
 其实这里我们更应该关联起来的是babel，看一下功能：  
@@ -152,8 +155,9 @@ postcss本身是一个node模块，可以将css文件解析为抽象语法树(AS
 
 ## 结束语  
 
-原先很早就看到postCss，当时太年轻认为是less的一种替代品罢了，所以一直没有去关注。了解之后感觉真的不错，至于如何使用这里就不去演示了，有兴趣的可以查看下[我的简单示例]()希望更多的人去体验一下更为便捷的css处理方案。
+原先很早就看到postCss，当时太年轻认为是less的一种替代品罢了，所以一直没有去关注。了解之后感觉真的不错，至于如何使用这里就不去演示了，有兴趣的可以查看下[我的简单示例](https://github.com/xiaoxiangdaiyu/postcss/tree/master/)希望更多的人使用。
 
 #### 参考文章  
 [http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/](http://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/)
 [http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/](http://julian.io/some-things-you-may-think-about-postcss-and-you-might-be-wrong/)
+

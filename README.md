@@ -1,6 +1,7 @@
 ## postCss 实践
 
-## [文档]('https://github.com/xiaoxiangdaiyu/postcss/tree/master/src')
+## 文档
+[postcss简介](https://github.com/xiaoxiangdaiyu/postcss/tree/master/src)
 ## 本地查看   
 ### init
 ```js
